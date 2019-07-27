@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\
+E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\
 KarliCards.Gui
 none
 false
 DEBUG;TRACE
-D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\App.xaml
-3-1972861687
+E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\App.xaml
+41762387959
 
-121112076436
+14526923922
 131569487696
-AboutWindow.xaml;MainWindow.xaml;OptionsWindow.xaml;
+AboutWindow.xaml;MainWindow.xaml;OptionsWindow.xaml;StartGameWindow.xaml;
 
-True
+False
 

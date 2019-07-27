@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<GameOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SelectedPlayers>
+    <string>liuyingtao</string>
+  </SelectedPlayers>
+  <PlayerNames>
+    <string>liuyingtao</string>
+    <string>wangfang</string>
+    <string>fangxianyi</string>
+    <string>zhouzhongjie</string>
+  </PlayerNames>
+  <PlayAgainstComputer>true</PlayAgainstComputer>
+  <NumberOfPlayers>4</NumberOfPlayers>
+  <MinutesBeforeLoss>0</MinutesBeforeLoss>
+  <ComputerSkill>Dumb</ComputerSkill>
+</GameOptions>

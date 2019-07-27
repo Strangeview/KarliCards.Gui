@@ -1,6 +1,6 @@
 ﻿using System;
-using System.IO;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,18 +17,18 @@ using System.Xml.Serialization;
 namespace KarliCards.Gui
 {
     /// <summary>
-    /// OptionsWindows.xaml 的交互逻辑
+    /// StartGameWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class OptionsWindows : Window
+    public partial class StartGameWindow : Window
     {
         private GameOptions gameOptions;
-        public OptionsWindows()
+        public StartGameWindow()
         {
             if (gameOptions == null)
             {
                 if (File.Exists("GameOptions.xml"))
                 {
-                    using(var stream = File.OpenRead("GameOptions.xml"))
+                    using (var stream = File.OpenRead("GameOptions.xml"))
                     {
                         var serializer = new XmlSerializer(typeof(GameOptions));
                         gameOptions = serializer.Deserialize(stream) as GameOptions;
@@ -41,25 +41,43 @@ namespace KarliCards.Gui
             }
             DataContext = gameOptions;
             InitializeComponent();
+            if (gameOptions.PlayAgainstComputer)
+            {
+                playerNameListBox.SelectionMode = SelectionMode.Single;
+            }
+            else
+            {
+                playerNameListBox.SelectionMode = SelectionMode.Extended;
+            }
         }
 
-        private void DumbAIRadioButton_Checked(object sender, RoutedEventArgs e)
+        private void PlayerNameListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            gameOptions.ComputerSkill = ComputerSkillLevel.Dumb;
+            if (gameOptions.PlayAgainstComputer)
+            {
+                okButton.IsEnabled = (playerNameListBox.SelectedItems.Count == 1);
+            }
+            else
+            {
+                okButton.IsEnabled = (playerNameListBox.SelectedItems.Count == gameOptions.NumberOfPlayers);
+            }
         }
 
-        private void GoodAIRadioButton_Checked(object sender, RoutedEventArgs e)
+        private void AddNewPlayerButton_Click(object sender, RoutedEventArgs e)
         {
-            gameOptions.ComputerSkill = ComputerSkillLevel.Good;
-        }
-
-        private void CheatingAIRadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            gameOptions.ComputerSkill = ComputerSkillLevel.Cheats;
+            if (!string.IsNullOrWhiteSpace(newPlayerTextBox.Text))
+            {
+                gameOptions.AddPlayer(newPlayerTextBox.Text);
+            }
+            newPlayerTextBox.Text = string.Empty;
         }
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
+            foreach(string item in playerNameListBox.SelectedItems)
+            {
+                gameOptions.SelectedPlayers.Add(item);
+            }
             using (var stream = File.Open("GameOptions.xml", FileMode.Create))
             {
                 var serializer = new XmlSerializer(typeof(GameOptions));

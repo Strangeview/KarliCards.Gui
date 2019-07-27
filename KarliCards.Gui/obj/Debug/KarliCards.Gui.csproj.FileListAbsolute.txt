@@ -36,3 +36,6 @@ E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\KarliCards.Gui.csproj.
 E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\KarliCards.Gui.csproj.CoreCompileInputs.cache
 E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\KarliCards.Gui.exe
 E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\KarliCards.Gui.pdb
+E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\StartGameWindow.g.cs
+E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\StartGameWindow.baml
