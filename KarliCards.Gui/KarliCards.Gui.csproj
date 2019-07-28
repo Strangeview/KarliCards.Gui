@@ -55,10 +55,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CardControl.xaml.cs">
+      <DependentUpon>CardControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameClientWindow.xaml.cs">
+      <DependentUpon>GameClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RankNameConverter.cs" />
     <Compile Include="StartGameWindow.xaml.cs">
       <DependentUpon>StartGameWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CardControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlResources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GameClientWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -117,7 +136,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CardPlayGames\CardPlayGames\CardPlayGames.csproj">
+      <Project>{6ff7a972-732c-4816-af68-88aa4bc80ec9}</Project>
+      <Name>CardPlayGames</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Banner.png" />
     <Resource Include="Images\base_floppydisk_32.png" />

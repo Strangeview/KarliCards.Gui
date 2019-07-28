@@ -39,3 +39,14 @@ E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\KarliCards.Gui.pdb
 E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\GeneratedInternalTypeHelper.g.cs
 E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\StartGameWindow.g.cs
 E:\GitHub Project\KarliCards.Gui\KarliCards.Gui\obj\Debug\StartGameWindow.baml
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\GameClientWindow.g.cs
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\StartGameWindow.g.cs
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\StartGameWindow.baml
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\ControlResources.baml
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\GameClientWindow.baml
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\bin\Debug\CardPlayGames.dll
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\bin\Debug\CardPlayGames.pdb
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\CardControl.g.cs
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\CardControl.baml
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\KarliCards.Gui.csproj.CopyComplete
