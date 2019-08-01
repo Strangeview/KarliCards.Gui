@@ -22,7 +22,7 @@ namespace KarliCards.Gui
         public GameClientWindow()
         {
             InitializeComponent();
-            var position = new Point(15, 15);
+          /* var position = new Point(15, 15);
             for(var i = 0; i < 4; i++)
             {
                 var suit = (CardPlayGames.Suit)i;
@@ -37,7 +37,27 @@ namespace KarliCards.Gui
                     contentGrid.Children.Add(card);
                 }
                 position.X += 112;
+            }*/
+        }
+        private void CommandCanExecute(object sender,CanExecuteRoutedEventArgs e)
+        {
+            if (e.Command == ApplicationCommands.Close)
+            {
+                e.CanExecute = true;
             }
+            if (e.Command == ApplicationCommands.Save)
+            {
+                e.CanExecute = false;
+            }
+            e.Handled = true;
+        }
+        private void CommandExecuted(object sender,ExecutedRoutedEventArgs e)
+        {
+            if (e.Command == ApplicationCommands.Close)
+            {
+                this.Close();
+            }
+            e.Handled = true;
         }
     }
 }

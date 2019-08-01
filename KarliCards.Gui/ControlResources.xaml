@@ -14,4 +14,20 @@
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Foreground" Value="#FFF7EFEF"/>
     </Style>
+    <Style x:Key="MainMenuStyle" TargetType="Menu">
+        <Setter Property="Background" Value="Black"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+    <Style x:Key="MainMenuItemStyle" TargetType="MenuItem">
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+    <Style x:Key="MainMenuSubMenuItemStyle" TargetType="MenuItem">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="Height" Value="22"/>
+    </Style>
+    <Style x:Key="MenuItemSeparatorStyle" TargetType="Separator">
+        <Setter Property="Foreground" Value="Black"/>
+    </Style>
 </ResourceDictionary>
