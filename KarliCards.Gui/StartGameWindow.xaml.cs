@@ -24,7 +24,7 @@ namespace KarliCards.Gui
         private GameOptions gameOptions;
         public StartGameWindow()
         {
-            if (gameOptions == null)
+           /* if (gameOptions == null)
             {
                 if (File.Exists("GameOptions.xml"))
                 {
@@ -39,8 +39,16 @@ namespace KarliCards.Gui
                     gameOptions = new GameOptions();
                 }
             }
-            DataContext = gameOptions;
+            DataContext = gameOptions;*/
+
             InitializeComponent();
+            // ChangeListBoxOptons();
+            DataContextChanged += StartGame_DataContextChanged;
+
+        }
+
+        private void ChangeListBoxOptons()
+        {
             if (gameOptions.PlayAgainstComputer)
             {
                 playerNameListBox.SelectionMode = SelectionMode.Single;
@@ -74,7 +82,7 @@ namespace KarliCards.Gui
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            foreach(string item in playerNameListBox.SelectedItems)
+            /*foreach(string item in playerNameListBox.SelectedItems)
             {
                 gameOptions.SelectedPlayers.Add(item);
             }
@@ -82,14 +90,27 @@ namespace KarliCards.Gui
             {
                 var serializer = new XmlSerializer(typeof(GameOptions));
                 serializer.Serialize(stream, gameOptions);
+            }*/
+            var gameOptions = DataContext as GameOptions;
+            gameOptions.SelectedPlayers = new List<string>();
+            foreach(string item in playerNameListBox.SelectedItems)
+            {
+                gameOptions.SelectedPlayers.Add(item);
             }
-            Close();
+            this.DialogResult = true;
+            this. Close();
         }
 
         private void CancleButton_Click(object sender, RoutedEventArgs e)
         {
             gameOptions = null;
             Close();
+        }
+        public void StartGame_DataContextChanged(object sender,DependencyPropertyChangedEventArgs e)
+        {
+            gameOptions = DataContext as GameOptions;
+            ChangeListBoxOptons();
+
         }
     }
 }

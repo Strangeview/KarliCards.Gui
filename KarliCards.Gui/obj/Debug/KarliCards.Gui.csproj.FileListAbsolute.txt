@@ -50,3 +50,7 @@ D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.
 D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\CardControl.g.cs
 D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\CardControl.baml
 D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\KarliCards.Gui.csproj.CopyComplete
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\CardsInHandControl.g.cs
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\GameDecksControl.g.cs
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\CardsInHandControl.baml
+D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\obj\Debug\GameDecksControl.baml

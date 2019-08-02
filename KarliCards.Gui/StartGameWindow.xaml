@@ -19,7 +19,7 @@
                    FontFamily="Times New Romain" FontSize="24" FontWeight="Bold"/>
         </Canvas>
         <ListBox Grid.Row="2" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Height="155" Width="227" Name="playerNameListBox"
-                 ItemsSource="{Binding Path=PlayerNames}" SelectionChanged="PlayerNameListBox_SelectionChanged"/>
+                 ItemsSource="{Binding Path=PlayerNames}" SelectionMode="Extended" SelectionChanged="PlayerNameListBox_SelectionChanged"/>
         <Label Grid.Row="2" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Content="Players"/>
         <Label Grid.Row="2" HorizontalAlignment="Left" Margin="252,5,0,0" VerticalAlignment="Top" Height="30" Width="90" Content="New Player"/>
         <TextBox Grid.Row="2" HorizontalAlignment="Left" Margin="252,31,0,0" VerticalAlignment="Top" Height="23" Width="166" TextWrapping="Wrap" Name="newPlayerTextBox"/>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\SoftwareProjects\GitHubProject\CSharpLearnMaterial\KarliCards.Gui\KarliCards.Gui\App.xaml
-71113152409
+9-1081646183
 
-17-1198206743
-14305034607
-AboutWindow.xaml;CardControl.xaml;ControlResources.xaml;GameClientWindow.xaml;MainWindow.xaml;OptionsWindow.xaml;StartGameWindow.xaml;
+20-306255896
+16719762219
+AboutWindow.xaml;CardControl.xaml;CardsInHandControl.xaml;ControlResources.xaml;GameClientWindow.xaml;GameDecksControl.xaml;MainWindow.xaml;OptionsWindow.xaml;StartGameWindow.xaml;
 
 False
 

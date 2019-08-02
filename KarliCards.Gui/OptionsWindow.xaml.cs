@@ -25,21 +25,23 @@ namespace KarliCards.Gui
         private GameOptions gameOptions;
         public OptionsWindows()
         {
-            if (gameOptions == null)
-            {
-                if (File.Exists("GameOptions.xml"))
-                {
-                    using(var stream = File.OpenRead("GameOptions.xml"))
-                    {
-                        var serializer = new XmlSerializer(typeof(GameOptions));
-                        gameOptions = serializer.Deserialize(stream) as GameOptions;
-                    }
-                }
-                else
-                {
-                    gameOptions = new GameOptions();
-                }
-            }
+            /* if (gameOptions == null)
+             {
+                 if (File.Exists("GameOptions.xml"))
+                 {
+                     using(var stream = File.OpenRead("GameOptions.xml"))
+                     {
+                         var serializer = new XmlSerializer(typeof(GameOptions));
+                         gameOptions = serializer.Deserialize(stream) as GameOptions;
+                     }
+                 }
+                 else
+                 {
+                     gameOptions = new GameOptions();
+                 }
+             }
+             DataContext = gameOptions;*/
+            gameOptions = GameOptions.Create();
             DataContext = gameOptions;
             InitializeComponent();
         }
@@ -61,11 +63,13 @@ namespace KarliCards.Gui
 
         private void OkButton_Click(object sender, RoutedEventArgs e)
         {
-            using (var stream = File.Open("GameOptions.xml", FileMode.Create))
-            {
-                var serializer = new XmlSerializer(typeof(GameOptions));
-                serializer.Serialize(stream, gameOptions);
-            }
+            /*  using (var stream = File.Open("GameOptions.xml", FileMode.Create))
+              {
+                  var serializer = new XmlSerializer(typeof(GameOptions));
+                  serializer.Serialize(stream, gameOptions);
+              }*/
+            DialogResult = true;
+            gameOptions.Save();
             Close();
         }
 
